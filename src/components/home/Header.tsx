@@ -66,6 +66,7 @@ const Header: React.FC = () => {
             <RiWallet2Line />
           </span>
           <span className="text-sm sm:text-base font-sec">Get a Quote</span>
+          {/* Added appoint */}
         </Link>
         <Link
           href={'https://calendar.app.google/fF6wyLsvd8zUF4PN6'}
