@@ -1,5 +1,5 @@
 import { BiGridSmall } from 'react-icons/bi';
-import { FeatureItem, WebFeature } from '../interfaces';
+import { FeatureItem, TechStuck, WebFeature } from '../interfaces';
 
 /** Dummy quotes data. */
 
@@ -31,6 +31,44 @@ export const platformData: FeatureItem[] = [
     description: {
       main: 'An IOS and an Android app',
     },
+  },
+];
+
+export const techStackData: TechStuck[] = [
+  {
+    id: 1,
+    end: 'front',
+    type: 'framework',
+    title: 'React',
+    logoUrl: '/img/react_logo.png',
+  },
+  {
+    id: 2,
+    end: 'front',
+    type: 'tools_lib',
+    title: 'Redux',
+    logoUrl: '/img/redux.webp',
+  },
+  {
+    id: 2,
+    end: 'front',
+    type: 'tools_lib',
+    title: 'Javascript',
+    logoUrl: '/img/javascript.webp',
+  },
+  {
+    id: 2,
+    end: 'front',
+    type: 'tools_lib',
+    title: 'Nodejs',
+    logoUrl: '/img/nodejs.webp',
+  },
+  {
+    id: 2,
+    end: 'front',
+    type: 'tools_lib',
+    title: 'MongoDB',
+    logoUrl: '/img/mongodb.webp',
   },
 ];
 

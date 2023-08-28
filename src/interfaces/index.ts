@@ -26,3 +26,11 @@ export type FeatureItem = {
   isSelected?: boolean;
   estimatedCost?: number;
 };
+
+export type TechStuck = {
+  id: number;
+  end: string;
+  type: 'framework' | 'tools_lib' | 'lang' | 'database';
+  title: string;
+  logoUrl: string;
+};
