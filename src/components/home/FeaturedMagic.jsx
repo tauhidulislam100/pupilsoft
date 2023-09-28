@@ -148,7 +148,7 @@ const FeaturedMagic = () => {
           className={`featured lg:bg-fixed bg-cover min-h-screen transition-all duration-500 ease-out ${
             active === 0 ? 'opacity-50' : 'opacity-20'
           }`}
-          style={{ backgroundImage: `url(${featuredmagic1})` }}
+          style={{ backgroundImage: `url('/featured5.png')` }}
         ></div>
         <div
           id="sec2"
@@ -157,7 +157,7 @@ const FeaturedMagic = () => {
             active === 1 ? 'opacity-50' : 'opacity-20'
           }`}
           style={{
-            backgroundImage: `url(https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)`,
+            backgroundImage: `url('/featured3.png')`,
           }}
         ></div>
         <div

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Header from './Header';
-import { RiInstagramLine, RiTwitterFill } from 'react-icons/ri';
+import { RiInstagramLine, RiTwitterFill, RiWallet2Line } from 'react-icons/ri';
 import { FaTelegramPlane } from 'react-icons/fa';
 import Slider from 'react-slick';
 
@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
 import TextScrambleComponent from './ScrambleText';
+import Link from 'next/link';
 
 const settings = {
   className: 'hero',
@@ -70,8 +71,39 @@ const Hero = () => {
         <div className="relative w-[90%] mx-auto">
           <div className="relative pt-40">
             <div className="md:flex justify-between items-center">
-              <div className="max-w-[600px]">
-                <TextScrambleComponent />
+              <div className="h-[calc(100vh-250px)] w-full flex justify-center items-center">
+                <div className="w-full">
+                  <TextScrambleComponent />
+                  <div className="mt-5 w-full flex justify-center gap-5">
+                    <Link
+                      href={'/quote'}
+                      className="rounded-full bg-primary hover:bg-primary/90 text-white px-5 py-2 flex items-center shadow"
+                    >
+                      <span className="text-lg pr-2">
+                        <RiWallet2Line />
+                      </span>
+                      <span className="text-sm sm:text-base font-sec">
+                        Get a Quote
+                      </span>
+                      {/* Added appoint */}
+                    </Link>
+                    <Link
+                      href={'https://calendar.app.google/fF6wyLsvd8zUF4PN6'}
+                      passHref
+                      target={'_blank'}
+                      rel={'noreferrer'}
+                      className="rounded-full bg-primary hover:bg-primary/90 text-white px-5 py-2 flex items-center shadow"
+                    >
+                      <span className="text-lg pr-2">
+                        <RiWallet2Line />
+                      </span>
+                      <span className="text-sm sm:text-base font-sec">
+                        Let's talk
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+
                 {/* <ul className="text-4xl text-center md:text-left sm:text-5xl md:text-6xl font-bold">
                   <li className="overflow-hidden">
                     <h1 ref={(ref) => (titlesRef.current[0] = ref)}>
@@ -100,7 +132,7 @@ const Hero = () => {
                   </li>
                 </ul> */}
               </div>
-              <div className="space-x-3 md:space-x-0 md:space-y-3 flex md:flex-col items-center justify-center mt-5">
+              {/* <div className="space-x-3 md:space-x-0 md:space-y-3 flex md:flex-col items-center justify-center mt-5">
                 <div className="flex justify-center items-center cursor-pointer w-10 h-10 text-xl bg-primary/20 rounded-full p-2 text-primary">
                   <FaTelegramPlane />
                 </div>
@@ -110,10 +142,10 @@ const Hero = () => {
                 <div className="flex justify-center items-center cursor-pointer w-10 h-10 text-xl bg-primary/20 rounded-full text-primary">
                   <RiInstagramLine />
                 </div>
-              </div>
+              </div> */}
             </div>
-            <div className="md:flex justify-between items-center pt-2">
-              <p className="flex items-center justify-center text-xs md:text-sm lg:text-base">
+            {/* <div className="md:flex justify-between items-center pt-2">
+              <p className="flex items-center justify-center text-xs md:text-sm lg:text-base text-center">
                 <span className="">
                   View Featured Books or Just scroll Down
                 </span>{' '}
@@ -137,7 +169,7 @@ const Hero = () => {
                   />
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

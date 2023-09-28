@@ -5,10 +5,37 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { FaTelegramPlane } from 'react-icons/fa';
 import gsap from 'gsap';
 import Link from 'next/link';
+import { useDimensions } from 'hooks';
+import { useCycle, motion } from 'framer-motion';
+import { BsThreeDotsVertical } from 'react-icons/bs';
+
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: 'spring',
+      stiffness: 20,
+      restDelta: 2,
+    },
+  }),
+  closed: {
+    clipPath: 'circle(30px at 40px 40px)',
+    transition: {
+      delay: 0.5,
+      type: 'spring',
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+};
 
 const Header: React.FC = () => {
   const [menu, setMenu] = useState(false);
-  const headRef = useRef();
+  const headRef = useRef(null);
+
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
+  const { height } = useDimensions(headRef);
 
   useEffect(() => {
     // if(menu){
@@ -49,7 +76,7 @@ const Header: React.FC = () => {
   return (
     <div className="fixed select-none px-3 md:px-10 top-0 left-0 w-full flex justify-between py-4 z-[55000]">
       <div
-        onClick={() => setMenu(!menu)}
+        onClick={() => toggleOpen()}
         className="flex items-center cursor-pointer"
       >
         <span className="text-3xl">
@@ -57,40 +84,27 @@ const Header: React.FC = () => {
         </span>
         <span className="text-xl hidden sm:block">PupilSoft</span>
       </div>
-      <div className="flex gap-5">
-        <Link
-          href={'/quote'}
-          className="rounded-full bg-primary hover:bg-primary/90 text-white px-5 py-2 flex items-center shadow"
-        >
-          <span className="text-lg pr-2">
-            <RiWallet2Line />
-          </span>
-          <span className="text-sm sm:text-base font-sec">Get a Quote</span>
-          {/* Added appoint */}
-        </Link>
-        <Link
-          href={'https://calendar.app.google/fF6wyLsvd8zUF4PN6'}
-          passHref
-          target={'_blank'}
-          rel={'noreferrer'}
-          className="rounded-full bg-primary hover:bg-primary/90 text-white px-5 py-2 flex items-center shadow"
-        >
-          <span className="text-lg pr-2">
-            <RiWallet2Line />
-          </span>
-          <span className="text-sm sm:text-base font-sec">Let's talk</span>
-        </Link>
+      <div className="">
+        <BsThreeDotsVertical />
       </div>
-      <div
+      <motion.nav
         ref={headRef}
-        className={`hidden fixed min-h-screen w-full top-full left-0 bg-cover bg-opacity-10 opacity-0 h-0 z-40`}
+        initial={false}
+        animate={isOpen ? 'open' : 'closed'}
+        custom={height}
+        className={`absolute w-full top-0 left-0 bottom-0 bg-cover bg-opacity-10 opacity-0 h-0 z-40`}
         style={{ backgroundImage: `url('/bookslide/bookslide1.png')` }}
+        // variants={sidebar}
       >
+        <motion.div
+          className="absolute top-0 left-0 bottom-0 bg-white w-full z-10"
+          variants={sidebar}
+        />
         <div className="w-full bg-dark/80 z-50 min-h-screen flex  flex-col lg:flex-row justify-between px-3 md:px-10 py-5">
           <div className="">
             <h1 className="flex items-center">
               <span
-                onClick={() => setMenu(!menu)}
+                onClick={() => toggleOpen()}
                 className="text-xl md:text-3xl hover:text-red-500 cursor-pointer"
               >
                 <AiOutlineClose />
@@ -141,7 +155,7 @@ const Header: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.nav>
     </div>
   );
 };
