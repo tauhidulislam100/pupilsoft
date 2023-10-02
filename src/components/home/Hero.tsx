@@ -27,7 +27,7 @@ const settings = {
   lazyLoad: 'ondemand',
 };
 
-const Hero = () => {
+const Hero = ({ children }: { children?: React.ReactNode }) => {
   const titlesRef = useRef([]);
 
   const scrollTo = (id) => gsap.to(window, { duration: 1, scrollTo: id });
@@ -101,16 +101,20 @@ const Hero = () => {
                       </span>
                     </Link>
                   </div> */}
-                  <h1 className="font-commissioner text-6xl font-semibold text-center">
-                    We e Are a True Partner In Your Web And Mobile APP
-                    Development.
-                  </h1>
-                  <p className=" text-center text-[22px] font-extralight leading-[35px] font-commissioner mt-7">
-                    We work with both startups and mature businesses to create
-                    high-end products for effective performance and growth. We
-                    love sophisticated technologies and complex projects, but
-                    simple and well-coordinated cooperation.
-                  </p>
+                  {children ?? (
+                    <>
+                      <h1 className="font-commissioner text-6xl font-semibold text-center">
+                        We Are a True Partner In Your Web And Mobile APP
+                        Development.
+                      </h1>
+                      <p className=" text-center text-[22px] font-extralight leading-[35px] font-commissioner mt-7">
+                        We work with both startups and mature businesses to
+                        create high-end products for effective performance and
+                        growth. We love sophisticated technologies and complex
+                        projects, but simple and well-coordinated cooperation.
+                      </p>
+                    </>
+                  )}
                 </div>
 
                 {/* <ul className="text-4xl text-center md:text-left sm:text-5xl md:text-6xl font-bold">
