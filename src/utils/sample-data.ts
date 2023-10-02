@@ -210,3 +210,26 @@ export const webQuotes: WebFeature[] = [
     ],
   },
 ];
+
+export const dummyPartners = [
+  {
+    id: 1,
+    logo: '/brand/block_vision.png',
+    title: 'Block Vision',
+  },
+  {
+    id: 2,
+    logo: '/brand/block_swap.png',
+    title: 'Swap',
+  },
+  {
+    id: 3,
+    logo: '/brand/sacred.png',
+    title: 'Sacred',
+  },
+  {
+    id: 4,
+    logo: '/brand/coin_flex.png',
+    title: 'Coin Flex',
+  },
+];

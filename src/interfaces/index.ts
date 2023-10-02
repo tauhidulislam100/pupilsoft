@@ -34,3 +34,9 @@ export type TechStuck = {
   title: string;
   logoUrl: string;
 };
+
+export type PartnerType = {
+  id: number;
+  logo: string;
+  title?: string;
+};

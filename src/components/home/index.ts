@@ -11,3 +11,5 @@ export { default as Services } from './Services';
 export { default as SocialPort } from './SocialPort';
 export { default as Takealook } from './Takealook';
 export { default as Team } from './Team';
+export { default as Projects } from './Projects';
+export { default as HowWeWork } from './HowWeWork';

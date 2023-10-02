@@ -45,8 +45,8 @@ const Hero = () => {
   }, []);
   console.log(titlesRef);
   return (
-    <section className="relative w-full min-h-screen max-h-screen overflow-hidden">
-      <div className="w-full h-full max-h-screen">
+    <section className="relative w-full min-h-screen max-h-screen overflow-hidden bg-dark">
+      {/* <div className="w-full h-full max-h-screen">
         <Slider
           className="w-full h-full max-h-screen overflow-hidden"
           {...settings}
@@ -66,15 +66,15 @@ const Hero = () => {
             />
           </div>
         </Slider>
-      </div>
+      </div> */}
       <div className="absolute w-full h-full top-0 left-0 md:px-10 -z-0">
         <div className="relative w-[90%] mx-auto">
           <div className="relative pt-40">
             <div className="md:flex justify-between items-center">
               <div className="h-[calc(100vh-250px)] w-full flex justify-center items-center">
-                <div className="w-full">
-                  <TextScrambleComponent />
-                  <div className="mt-5 w-full flex justify-center gap-5">
+                <div className="w-full text-white max-w-[1100px] mx-auto">
+                  {/* <TextScrambleComponent /> */}
+                  {/* <div className="mt-5 w-full flex justify-center gap-5">
                     <Link
                       href={'/quote'}
                       className="rounded-full bg-primary hover:bg-primary/90 text-white px-5 py-2 flex items-center shadow"
@@ -85,7 +85,6 @@ const Hero = () => {
                       <span className="text-sm sm:text-base font-sec">
                         Get a Quote
                       </span>
-                      {/* Added appoint */}
                     </Link>
                     <Link
                       href={'https://calendar.app.google/fF6wyLsvd8zUF4PN6'}
@@ -101,7 +100,17 @@ const Hero = () => {
                         Let's talk
                       </span>
                     </Link>
-                  </div>
+                  </div> */}
+                  <h1 className="font-commissioner text-6xl font-semibold text-center">
+                    We e Are a True Partner In Your Web And Mobile APP
+                    Development.
+                  </h1>
+                  <p className=" text-center text-[22px] font-extralight leading-[35px] font-commissioner mt-7">
+                    We work with both startups and mature businesses to create
+                    high-end products for effective performance and growth. We
+                    love sophisticated technologies and complex projects, but
+                    simple and well-coordinated cooperation.
+                  </p>
                 </div>
 
                 {/* <ul className="text-4xl text-center md:text-left sm:text-5xl md:text-6xl font-bold">
