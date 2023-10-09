@@ -103,10 +103,11 @@ const Hero = ({ children }: { children?: React.ReactNode }) => {
                   </div> */}
                   {children ?? (
                     <>
-                      <h1 className="font-commissioner text-6xl font-semibold text-center">
+                      {/* <h1 className="font-commissioner text-6xl font-semibold text-center">
                         We Are a True Partner In Your Web And Mobile APP
                         Development.
-                      </h1>
+                      </h1> */}
+                      <TextScrambleComponent />
                       <p className=" text-center text-[22px] font-extralight leading-[35px] font-commissioner mt-7">
                         We work with both startups and mature businesses to
                         create high-end products for effective performance and

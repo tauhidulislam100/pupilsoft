@@ -67,12 +67,9 @@ class TextScramble {
 }
 
 const phrases = [
-  'World’s First',
-  'Decentralized',
-  'Comic Book',
-  'Transform your intentions into a legacy of support.',
-  'Join the whispers of change. Weave a tapestry of sustained support.',
-  'Rise to give. Give to rise. Giverise!',
+  'We Are a True Partner',
+  'In Your Web',
+  'And Mobile APP Development.',
 ];
 
 const TextScrambleComponent = () => {
