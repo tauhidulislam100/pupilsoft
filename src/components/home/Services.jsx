@@ -7,66 +7,70 @@ import { dummyPartners } from "utils/sample-data";
 const Services = () => {
   return (
     <div className="w-full">
-      <div className="text-center">
-        <h2 className="text-[55px] text-black font-bold mt-40">
+      <div className="text-center px-5 lg:px-0">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[55px] text-black font-bold mt-10 sm:mt-16 md:mt-20 lg:mt-40">
           Our web development services
         </h2>
-        <p className="mt-3 max-w-[1132px] mx-auto font-poppins text-[22px] leading-[35px] text-black">
+        <p className="mt-3 max-w-[1132px] mx-auto font-poppins text-base sm:text-lg md:text-xl lg:text-[22px] lg:leading-[35px] text-black">
           Specialists at Innowise Group launch, manage, and complete CMS website
           development projects of any scope and complexity, including:
         </p>
       </div>
-      <div className="w-full bg-dark mt-32 px-[10%] py-[71px] grid grid-cols-2 ">
-        <div className="pt-[50px] pb-[110px] pr-[72px] border-white border-r border-b">
-          <div className="w-[148px] h-[124px]">
+      <div className="w-full bg-dark mt-10 sm:mt-16 md:mt-20 lg:mt-32 px-[5%] xl:px-[10%] py-12 xl:py-[71px] grid grid-cols-2 gap-y-4 gap-x-4 min-[480px]:gap-0">
+        <div className="min-[480px]:pt-8 lg:pt-[50px] pb-10 lg:pb-[110px] min-[480px]:pr-8 lg:pr-[72px] border-white min-[480px]:border-r min-[480px]:border-b">
+          <div className="w-[50px] h-[42.56px] lg:w-[148px] lg:h-[124px]">
             <img src="/img/turnkey.svg" alt="" />
           </div>
-          <div className="font-poppins">
-            <h4 className="text-3xl font-bold pt-10">
+          <div className="font-poppins pt-5 lg:pt-10">
+            <h4 className="text-base sm:text-xl lg:text-3xl font-medium sm:font-bold">
               Turnkey web app development
             </h4>
-            <p className="text-2xl font-light pt-8 max-w-[631px]">
+            <p className="text-sm sm:text-base lg:text-2xl font-light pt-4 lg:pt-8 max-w-[631px]">
               We handle full-cycle web solutions development, delivering
               everything from design and architecture prototyping to coding,
               optimization, and post-release support.
             </p>
           </div>
         </div>
-        <div className="pt-[42px] pb-[110px] pl-[72px] border-b border-white">
-          <div className="w-[140px] h-[130px]">
+        <div className="min-[480px]:pt-8 lg:pt-[42px] pb-10 lg:pb-[110px] min-[480px]:pl-8 lg:pl-[72px] min-[480px]:border-b border-white">
+          <div className="w-[50px] h-[46.42px] lg:w-[140px] lg:h-[130px]">
             <img src="/img/cms.svg" alt="" />
           </div>
-          <div className="font-poppins">
-            <h4 className="text-3xl font-bold pt-10">CMS web development</h4>
-            <p className="text-2xl font-light pt-8 max-w-[631px]">
+          <div className="font-poppins pt-5 lg:pt-10">
+            <h4 className="text-base sm:text-xl lg:text-3xl font-medium sm:font-bold">
+              CMS web development
+            </h4>
+            <p className="text-sm sm:text-base lg:text-2xl font-light pt-4 lg:pt-8 max-w-[631px]">
               We handle full-cycle web solutions development, delivering
               everything from design and architecture prototyping to coding,
               optimization, and post-release support.
             </p>
           </div>
         </div>
-        <div className="pt-[126px] pb-[110px] pr-[72px] border-t border-white">
-          <div className="w-[109px] h-[79px]">
+        <div className="min-[480px]:pt-10 lg:pt-[126px] pb-12 lg:pb-[110px] min-[480px]:pr-8 lg:pr-[72px] min-[480px]:border-t border-white">
+          <div className="w-[55px] h-[39.86px] lg:w-[109px] lg:h-[79px]">
             <img src="/img/cloud.svg" alt="" />
           </div>
-          <div className="font-poppins">
-            <h4 className="text-3xl font-bold pt-10">
+          <div className="font-poppins pt-5 lg:pt-10">
+            <h4 className="text-base sm:text-xl lg:text-3xl font-medium sm:font-bold">
               Cloud-based web development
             </h4>
-            <p className="text-2xl font-light pt-8 max-w-[631px]">
+            <p className="text-sm sm:text-base lg:text-2xl font-light pt-4 lg:pt-8 max-w-[631px]">
               We handle full-cycle web solutions development, delivering
               everything from design and architecture prototyping to coding,
               optimization, and post-release support.
             </p>
           </div>
         </div>
-        <div className="pt-[99px] pb-[110px] pl-[72px] border-white border-t border-l">
-          <div className="w-[160px] h-[110px]">
+        <div className="min-[480px]:pt-10 lg:pt-[99px] pb-12 lg:pb-[110px] min-[480px]:pl-8 lg:pl-[72px] border-white min-[480px]:border-t min-[480px]:border-l">
+          <div className="w-[55px] h-[38.22px] lg:w-[160px] lg:h-[110px]">
             <img src="/img/front_end.svg" alt="" />
           </div>
-          <div className="font-poppins">
-            <h4 className="text-3xl font-bold pt-10">Front-end development</h4>
-            <p className="text-2xl font-light pt-8 max-w-[631px]">
+          <div className="font-poppins pt-5 lg:pt-10">
+            <h4 className="text-base sm:text-xl lg:text-3xl font-medium sm:font-bold">
+              Front-end development
+            </h4>
+            <p className="text-sm sm:text-base lg:text-2xl font-light pt-4 lg:pt-8 max-w-[631px]">
               We handle full-cycle web solutions development, delivering
               everything from design and architecture prototyping to coding,
               optimization, and post-release support.
@@ -75,10 +79,10 @@ const Services = () => {
         </div>
       </div>
       <div className="my-24">
-        <h3 className="text-dark text-4xl font-medium text-center">
+        <h3 className="text-dark text-2xl sm:text-3xl lg:text-4xl font-medium text-center">
           Our Honorable Partner
         </h3>
-        <div className="flex justify-center items-center gap-24 mt-20">
+        <div className="grid grid-cols-2 w-fit mx-auto md:flex justify-center items-center gap-x-16 gap-y-10 md:gap-5 lg:gap-24 mt-8 sm:mt-10 md:mt-16 lg:mt-20 px-8 lg:px-10">
           {dummyPartners.map((pnr) => (
             <Image
               src={pnr.logo}
