@@ -1,20 +1,20 @@
-import React, { useEffect, useRef } from 'react';
-import Header from './Header';
-import { RiInstagramLine, RiTwitterFill, RiWallet2Line } from 'react-icons/ri';
-import { FaTelegramPlane } from 'react-icons/fa';
-import Slider from 'react-slick';
+import React, { useEffect, useRef } from "react";
+import Header from "./Header";
+import { RiInstagramLine, RiTwitterFill, RiWallet2Line } from "react-icons/ri";
+import { FaTelegramPlane } from "react-icons/fa";
+import Slider from "react-slick";
 
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
-import TextScrambleComponent from './ScrambleText';
-import Link from 'next/link';
+import TextScrambleComponent from "./ScrambleText";
+import Link from "next/link";
 
 const settings = {
-  className: 'hero',
+  className: "hero",
   fade: true,
   infinite: true,
   speed: 500,
@@ -23,8 +23,8 @@ const settings = {
   autoplaySpeed: 3000,
   slidesToScroll: 1,
   arrows: false,
-  cssEase: 'ease-in-out',
-  lazyLoad: 'ondemand',
+  cssEase: "ease-in-out",
+  lazyLoad: "ondemand",
 };
 
 const Hero = ({ children }: { children?: React.ReactNode }) => {
@@ -33,12 +33,12 @@ const Hero = ({ children }: { children?: React.ReactNode }) => {
   const scrollTo = (id) => gsap.to(window, { duration: 1, scrollTo: id });
 
   useEffect(() => {
-    const tl = gsap.timeline({ y: 100, duration: 1, ease: 'ease-in-out' });
+    const tl = gsap.timeline({ y: 100, duration: 1, ease: "ease-in-out" });
     titlesRef.current.map((v) => {
       gsap.from(v, {
         y: 100,
         duration: 1,
-        ease: 'ease-in-out',
+        ease: "ease-in-out",
         delay: 0.3,
       });
     });
@@ -103,11 +103,12 @@ const Hero = ({ children }: { children?: React.ReactNode }) => {
                   </div> */}
                   {children ?? (
                     <>
-                      <h1 className="font-commissioner text-6xl font-semibold text-center">
+                      {/* <h1 className="font-commissioner text-6xl font-semibold text-center">
                         We Are a True Partner In Your Web And Mobile APP
                         Development.
-                      </h1>
-                      <p className=" text-center text-[22px] font-extralight leading-[35px] font-commissioner mt-7">
+                      </h1> */}
+                      <TextScrambleComponent />
+                      <p className=" text-center text-lg md:text-[22px] font-extralight md:leading-[35px] font-commissioner mt-7">
                         We work with both startups and mature businesses to
                         create high-end products for effective performance and
                         growth. We love sophisticated technologies and complex

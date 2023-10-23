@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import { twMerge } from 'tailwind-merge';
+import React, { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 type ButtonProps = {
   className?: string;
   children: ReactNode | string;
@@ -18,7 +18,7 @@ const Button = ({
     <button
       {...rest}
       className={twMerge(
-        'w-full bg-[#FF8D29] shadow-sm tracking-[0.1px] py-5 px-[30px] rounded-full text-white font-commissioner text-[26px] font-semibold',
+        "w-full bg-[#FF8D29] border border-primary hover:text-primary transition-all duration-300 hover:bg-transparent shadow-sm tracking-[0.1px] py-5 px-[30px] rounded-full text-white font-commissioner text-[26px] font-semibold",
         className
       )}
     >
