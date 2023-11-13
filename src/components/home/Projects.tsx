@@ -1,5 +1,6 @@
 import Button from "components/common/Button";
 import Project from "components/project";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
@@ -16,7 +17,16 @@ const Projects = ({
         wrapClass ? wrapClass : "bg-[#F0F2F5] pt-10 sm:pt-16 md:pt-20 lg:pt-40"
       }`}
     >
-      <div className="text-center text-black px-5 lg:px-0">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          duration: 1,
+          stiffness: 50,
+        }}
+        className="text-center text-black px-5 lg:px-0"
+      >
         <h2 className="text-2xl sm:text-4xl lg:text-[47px] font-semibold">
           These Are Some Of Our Projects
         </h2>
@@ -24,7 +34,7 @@ const Projects = ({
           Get seasoned offshore developers without breaking the bank.
           <br /> We train and manage our engineers and hence relieve you of
         </p>
-      </div>
+      </motion.div>
       <div className="mt-10 w-[85%] xl:w-3/4 mx-auto space-y-12">
         {[...Array(items)].map((_, idx: number) => (
           <Project key={idx} />

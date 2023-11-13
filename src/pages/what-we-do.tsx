@@ -60,7 +60,7 @@ const texts3 = [
 
 const WhatWeDo = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <Head>
         <title>What we do</title>
       </Head>
@@ -93,7 +93,7 @@ const WhatWeDo = () => {
         <DevStrength />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 export default WhatWeDo;
