@@ -1,6 +1,6 @@
-import { Button } from "components/common";
-import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import { Button } from 'components/common';
+import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 
 const ClientResult = () => {
   return (
@@ -11,7 +11,7 @@ const ClientResult = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              type: "spring",
+              type: 'spring',
               duration: 1,
               stiffness: 50,
             }}
@@ -23,7 +23,7 @@ const ClientResult = () => {
             <p className="text-sm sm:text-base md:text-lg lg:ltext-xl 2xl:text-[22px] 2xl:leading-[30px] font-light mt-3 md:mt-4 lg:mt-6">
               We handle full-cycle web solutions development, delivering
               everything from design and architecture prototyping to coding,
-              optimization,{" "}
+              optimization,{' '}
             </p>
           </motion.div>
           <div className="sm:flex items-center justify-between mt-10 lg:mt-14 2xl:mt-[88px] xl:gap-5 2xl:gap-10">
@@ -32,28 +32,28 @@ const ClientResult = () => {
                 Client Results
               </p>
               <div className="pt-3 sm:pt-4 md:pt-5 2xl:pt-9 grid grid-cols-2 divide-x-2 divide-[#BCC0CB] overflow-hidden">
-                <div className="py-4 sm:py-5 md:py-8 lg:py-14 xl:py-20 font-poppins text-center">
+                <div className="py-4 sm:py-5 md:py-8 lg:py-14 xl:py-20 font-poppins text-center overflow-hidden">
                   <motion.h1
-                    initial={{ opacity: 0, x: -100 }}
+                    initial={{ opacity: 0, x: -150 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
-                    className="transition duration-1000 ease-in-out text-2xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-[120px] text-[#1D3061] 2xl:leading-[120px] font-bold"
+                    className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-[120px] text-[#1D3061] 2xl:leading-[120px] font-bold"
                   >
                     32%
                   </motion.h1>
                   <motion.p
-                    initial={{ opacity: 0, x: -100 }}
+                    initial={{ opacity: 0, x: 200 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
                     className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-[25px]"
                   >
-                    {" "}
+                    {' '}
                     web solutions development
                   </motion.p>
                 </div>
-                <div className="py-4 sm:py-5 md:py-8 lg:py-14 xl:py-20 font-poppins text-center">
+                <div className="py-4 sm:py-5 md:py-8 lg:py-14 xl:py-20 font-poppins text-center overflow-hidden">
                   <motion.h1
-                    initial={{ opacity: 0, x: 100 }}
+                    initial={{ opacity: 0, x: 150 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
                     className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-[120px] text-[#1D3061] 2xl:leading-[120px] font-bold"
@@ -61,12 +61,12 @@ const ClientResult = () => {
                     56%
                   </motion.h1>
                   <motion.p
-                    initial={{ opacity: 0, x: 100 }}
+                    initial={{ opacity: 0, x: -200 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
                     className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-[25px]"
                   >
-                    {" "}
+                    {' '}
                     web solutions development
                   </motion.p>
                 </div>
