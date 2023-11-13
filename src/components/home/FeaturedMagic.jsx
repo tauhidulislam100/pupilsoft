@@ -24,7 +24,7 @@ const FeaturedMagic = () => {
   const slidesRef3 = React.useRef();
   const slidesRef4 = React.useRef();
 
-  const scrollTo = (id) => gsap.to(window, { duration: 1, scrollTo: id });
+  const scrollTo = (id) => gsap.to(window, { duration: 0.5, scrollTo: id });
 
   React.useEffect(() => {
     gsap.utils.toArray('.featured').forEach((feature, idx) => {
@@ -73,69 +73,69 @@ const FeaturedMagic = () => {
             </h4>
             <ul className="">
               <li
-                className={`transition-all duration-500 ease-in-out ${
+                className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 0
                     ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
                 <a onClick={() => scrollTo('#sec1')} className="">
-                  Superhero
+                  John Doe
                 </a>
               </li>
               <li
-                className={`transition-all duration-500 ease-in-out ${
+                className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 1
                     ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
                 <a onClick={() => scrollTo('#sec2')} className="">
-                  Humor
+                  Luke David
                 </a>
               </li>
               <li
-                className={`transition-all duration-500 ease-in-out ${
+                className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 2
                     ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
                 <a onClick={() => scrollTo('#sec3')} className="">
-                  Slice-of-Life
+                  Miquel Swan
                 </a>
               </li>
               <li
-                className={`transition-all duration-500 ease-in-out ${
+                className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 3
                     ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
                 <a onClick={() => scrollTo('#sec4')} className="">
-                  Science-Fiction/Fantasy
+                  Hirack Turan Duck
                 </a>
               </li>
               <li
-                className={`transition-all duration-500 ease-in-out ${
+                className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 4
                     ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
                 <a onClick={() => scrollTo('#sec5')} className="">
-                  Non-fiction
+                  Dravid Tawn
                 </a>
               </li>
               <li
-                className={`transition-all duration-500 ease-in-out ${
+                className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 5
                     ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
                 <a onClick={() => scrollTo('#sec6')} className="">
-                  Horror
+                  Tyson
                 </a>
               </li>
             </ul>
