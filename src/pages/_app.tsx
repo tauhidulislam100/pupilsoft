@@ -22,7 +22,7 @@ const poppins = Poppins({
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <main
-      className={`${commissioner.variable} ${jost.variable} ${poppins.variable} font-commissioner overflow-hidden`}
+      className={`${commissioner.variable} ${jost.variable} ${poppins.variable} font-commissioner`}
     >
       <Component {...pageProps} />
     </main>

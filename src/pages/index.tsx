@@ -14,7 +14,7 @@ import {
 
 const IndexPage: NextPage = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center text-white">
+    <div className="w-full min-h-screen flex flex-col justify-center items-center text-white overflow-hidden">
       <Header />
       <Hero />
       <Services />

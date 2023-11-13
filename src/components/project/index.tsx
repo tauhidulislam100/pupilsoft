@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-import React from "react";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 const Project = () => {
   return (
@@ -13,7 +14,7 @@ const Project = () => {
           className="relative flex-1 h-[230px] xs:h-[300px] sm:h-[400px] md:h-[525px] xl:h-[625px]"
         >
           <Image
-            src={"/featured3.png"}
+            src={'/featured3.png'}
             alt="Project"
             fill
             className="rounded-xlg"
@@ -26,7 +27,7 @@ const Project = () => {
             transition={{ duration: 1 }}
             className="text-base sm:text-lg lg:text-[22px] font-extralight"
           >
-            Landing page{" "}
+            Landing page{' '}
           </motion.h5>
           <motion.h2
             initial={{ opacity: 0, x: 100 }}
@@ -71,20 +72,22 @@ const Project = () => {
             <span className="font-bold">Team:</span> 3 PMs, 2 BAs, 12
             developers, 6 HTML/CSS coders, 5 Automation Engineers, 8 QAs
           </motion.p>
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="w-fit"
-          >
-            <Image
-              src={"/img/arrow_right.svg"}
-              alt="Arrow"
-              width={152}
-              height={30}
-              className=" mt-8 xl:mt-16"
-            />
-          </motion.div>
+          <Link href={'/'}>
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              className="w-fit"
+            >
+              <Image
+                src={'/img/arrow_right.svg'}
+                alt="Arrow"
+                width={152}
+                height={30}
+                className=" mt-8 xl:mt-16"
+              />
+            </motion.div>
+          </Link>
         </div>
       </div>
     </div>

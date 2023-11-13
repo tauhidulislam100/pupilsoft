@@ -6,55 +6,55 @@ import {
   Header,
   Hero,
   Projects,
-} from "components";
-import Text from "components/what-we-do/Text";
-import Head from "next/head";
-import React from "react";
+} from 'components';
+import Text from 'components/what-we-do/Text';
+import Head from 'next/head';
+import React from 'react';
 
 const texts1 = [
   {
-    title: "WE MAKE COMPLEX CUSTOM APPLICATIONS IN A CLEAR WAY",
+    title: 'WE MAKE COMPLEX CUSTOM APPLICATIONS IN A CLEAR WAY',
     description:
-      "Our focus is on complex long-term web and mobile projects, in  which we are fully responsible for the technical part, from  planning a roadmap to deploying and maintaining applications.",
+      'Our focus is on complex long-term web and mobile projects, in  which we are fully responsible for the technical part, from  planning a roadmap to deploying and maintaining applications.',
   },
   {
-    title: "WE VALUE RELATIONSHIPS",
+    title: 'WE VALUE RELATIONSHIPS',
     description:
-      "We believe that good projects are born of transparency and synergy between the client and the team. We walk this path together, and together we make decisions as partners. While we handle the entire technical aspect, we expect you to focus on the business side",
+      'We believe that good projects are born of transparency and synergy between the client and the team. We walk this path together, and together we make decisions as partners. While we handle the entire technical aspect, we expect you to focus on the business side',
   },
 ];
 const texts2 = [
   {
-    title: "WE KNOW EXACTLY WHAT WE ARE GOOD AT",
-    description: "Our clear definition makes us really good experts.",
+    title: 'WE KNOW EXACTLY WHAT WE ARE GOOD AT',
+    description: 'Our clear definition makes us really good experts.',
   },
   {
-    title: "WE PROVIDE:",
+    title: 'WE PROVIDE:',
     list: [
-      "Programming",
-      "Testing.",
-      "Development process management.",
-      "Server configuration and support.",
-      "Documentation creation.",
+      'Programming',
+      'Testing.',
+      'Development process management.',
+      'Server configuration and support.',
+      'Documentation creation.',
     ],
   },
 ];
 const texts3 = [
   {
-    title: "WE PROWE DO NOT PROVIDE:",
+    title: 'WE PROWE DO NOT PROVIDE:',
     list: [
       `Consulting; we can share our experience, but consulting is not
       our area.`,
       "Design; if you don't have your own designer, we are ready to recommend our partners.",
-      "AI/VR/AR/ML; we can determine the need for such technologies and attract third-party narrow experts.",
+      'AI/VR/AR/ML; we can determine the need for such technologies and attract third-party narrow experts.',
       `Promotion and sales; we are techies, so business endeavors are
       up to you.`,
     ],
   },
   {
-    title: "IT’S EASY TO GET US STARTED",
+    title: 'IT’S EASY TO GET US STARTED',
     description:
-      "If you have a vision for a future product, you simply need to reach out and tell us your idea. There’s no need to include  technical specifications and other complex documentation, and we  won’t burden you with requests for payment or cost estimations  right away. If we feel your project is a good match for us, we  will assemble a team, draw up a roadmap, and launch sprints. There  will be interesting and difficult work ahead, but this stage is  very simple.",
+      'If you have a vision for a future product, you simply need to reach out and tell us your idea. There’s no need to include  technical specifications and other complex documentation, and we  won’t burden you with requests for payment or cost estimations  right away. If we feel your project is a good match for us, we  will assemble a team, draw up a roadmap, and launch sprints. There  will be interesting and difficult work ahead, but this stage is  very simple.',
   },
 ];
 

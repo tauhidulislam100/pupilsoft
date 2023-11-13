@@ -1,39 +1,9 @@
 import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 import { techStackData } from 'utils/sample-data';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { Footer, Header } from 'components';
-gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
-  useEffect(() => {
-    // const pinableItems = gsap.utils.toArray('.pinable');
-    // ScrollTrigger.create({
-    //   trigger: '.backend',
-    //   start: 'top center',
-    //   pin: true,
-    // });
-    // let ctx = gsap.context(() => {});
-    // pinableItems.forEach((itm: HTMLDivElement, idx) => {
-    //   gsap.to(itm, {
-    //     scrollTrigger: {
-    //       trigger: itm,
-    //       pin: true,
-    //       scrub: 3,
-    //       toggleActions: 'restart pause reverse pause',
-    //       start: 'top top',
-    //       end: 'bottom bottom',
-    //       pinSpacing: false,
-    //       markers: true,
-    //     },
-    //     y: -(idx + 1) * 200,
-    //     duration: 3,
-    //   });
-    // });
-    // return ctx.revert();
-  }, []);
-
   return (
     <div className="bg-dark px-[3%] pb-5 select-none text-white min-h-screen py-20">
       <Header />
@@ -43,7 +13,7 @@ const Skills = () => {
       <div className="w-full mt-10 flex">
         <div className="w-1/3 relative min-h-full">
           <section className="w-full sticky top-1/2">
-            <h2 className="text-2xl font-bold mt-10">Front-End</h2>
+            <h2 className="text-2xl font-bold">Front-End</h2>
             <p className="text-base mt-5">
               Beinng the face of the project, we pay attention to every little
               detail in order to male it fascinating and easy to use so that

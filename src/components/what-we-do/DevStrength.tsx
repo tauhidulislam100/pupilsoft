@@ -1,6 +1,7 @@
-import { Button } from "components/common";
-import { motion } from "framer-motion";
-import React from "react";
+import { Button } from 'components/common';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import React from 'react';
 
 const DevStrength = () => {
   return (
@@ -36,9 +37,11 @@ const DevStrength = () => {
           transition={{ duration: 1 }}
           className=""
         >
-          <Button className="max-w-[292px] py-2.5 text-lg">
-            See our Skills
-          </Button>
+          <Link href={'/skills'}>
+            <Button className="max-w-[292px] py-2.5 text-lg">
+              See our Skills
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
