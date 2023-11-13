@@ -3,15 +3,20 @@ import { RiInstagramLine, RiTwitterFill } from "react-icons/ri";
 import { FaTelegramPlane } from "react-icons/fa";
 import Button from "components/common/Button";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <section className="w-full bottom-0 left-0 -z-0 bg-dark">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="w-full bottom-0 left-0 -z-0 bg-dark"
+    >
       <div className="w-[80%] pt-5 sm:py-10 mx-auto border-t border-white/20">
         <div className="lg:flex gap-10 mt-10 md:mt-20 lg:mt-40">
           <div className="lg:w-3/5 space-y-5 text-white">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[75px] font-bold">
-              Let’s Make It Together
+              Let&apos;s Make It Together
             </h1>
             <p className="mt-2 text-lg lg:text-[22px] text-[#E0E0E0]">
               The baseline is the invisible line upon which a line of text
@@ -111,12 +116,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#060E22] text-xs text-center py-10 mb-5">
+      <div className="bg-[#060E22] text-xs text-center py-10">
         <p className="text-white font-commissioner text-[15px]">
           &copy; Copyright {new Date().getFullYear()}. Designed by Tuhin
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

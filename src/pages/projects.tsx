@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import { NextPage } from 'next';
 import {
   Hero,
   Header,
@@ -7,20 +7,25 @@ import {
   FeaturedMagic,
   Projects,
   HowWeWork,
-} from "components";
-import { useState } from "react";
+  DevStrength,
+} from 'components';
+import { useState } from 'react';
+import Head from 'next/head';
 
 const ProjectsPage: NextPage = () => {
   const [isClicked, setClicked] = useState(false);
   return (
-    <div className="w-full bg-[#F0F2F5] min-h-screen flex flex-col justify-center items-center text-white">
+    <div className="w-full bg-[#F0F2F5] min-h-screen flex flex-col justify-center items-center text-white overflow-hidden">
+      <Head>
+        <title>Projects | Pupilsoft</title>
+      </Head>
       <Header />
       <Hero>
         <h1 className="text-[51px] font-semibold leading-[70px] text-center">
-          We create custom web applications for you and{" "}
+          We create custom web applications for you and{' '}
           <span
             onClick={() => setClicked((prev) => !prev)}
-            className={`${isClicked ? "text-[#0AF4E1]" : "text-primary"}`}
+            className={`${isClicked ? 'text-[#0AF4E1]' : 'text-primary'}`}
           >
             Mobile applications
           </span>
@@ -31,6 +36,7 @@ const ProjectsPage: NextPage = () => {
           <Project key={idx} />
         ))}
       </div>
+      <DevStrength />
       <Footer />
     </div>
   );
