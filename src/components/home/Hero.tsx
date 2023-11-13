@@ -12,6 +12,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 import TextScrambleComponent from "./ScrambleText";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const settings = {
   className: "hero",
@@ -45,7 +46,11 @@ const Hero = ({ children }: { children?: React.ReactNode }) => {
   }, []);
   console.log(titlesRef);
   return (
-    <section className="relative w-full min-h-screen max-h-screen overflow-hidden bg-dark">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="relative w-full min-h-screen max-h-screen overflow-hidden bg-dark"
+    >
       {/* <div className="w-full h-full max-h-screen">
         <Slider
           className="w-full h-full max-h-screen overflow-hidden"
@@ -187,7 +192,7 @@ const Hero = ({ children }: { children?: React.ReactNode }) => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

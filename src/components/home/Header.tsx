@@ -57,7 +57,9 @@ const Header: React.FC = () => {
         {/* <span className="text-3xl">
           <HiOutlineMenuAlt4 />
         </span> */}
-        <span className="text-xl text-primary font-bold">PupilSoft</span>
+        <Link href="/">
+          <span className="text-xl text-primary font-bold">PupilSoft</span>
+        </Link>
       </div>
       <div className="space-x-20 hidden lg:block">
         <Link
