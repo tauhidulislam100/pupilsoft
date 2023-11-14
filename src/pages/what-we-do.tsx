@@ -10,6 +10,7 @@ import {
 import Text from 'components/what-we-do/Text';
 import Head from 'next/head';
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 
 const texts1 = [
   {
@@ -69,7 +70,22 @@ const WhatWeDo = () => {
         <Hero>
           <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-[51px] font-semibold lg:leading-[70px] text-center">
             We Are a True Partner In Your Web <br />
-            <span className="text-primary">APP Development.</span>
+            <span className="text-primary">
+              <TypeAnimation
+                sequence={[
+                  'APP Development.',
+                  1000,
+                  'Web Development.',
+                  1000,
+                  'Blockchain Development.',
+                  1000,
+                  '',
+                ]}
+                speed={30}
+                // deletionSpeed={10}
+                repeat={Infinity}
+              />
+            </span>
           </h1>
         </Hero>
         <section className="w-[85%] xl:w-3/4 mx-auto py-16 sm:py-24 space-y-5 sm:space-y-[35px]">

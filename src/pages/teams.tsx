@@ -4,7 +4,7 @@ import React from 'react';
 const Teams = () => {
   return (
     <div className="bg-dark">
-      <Header />
+      <Header isTransparent />
       <FeaturedMagic />
     </div>
   );

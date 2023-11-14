@@ -1,9 +1,9 @@
-import React from "react";
-import { RiInstagramLine, RiTwitterFill } from "react-icons/ri";
-import { FaTelegramPlane } from "react-icons/fa";
-import Button from "components/common/Button";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import React from 'react';
+import { RiInstagramLine, RiTwitterFill } from 'react-icons/ri';
+import { FaTelegramPlane } from 'react-icons/fa';
+import Button from 'components/common/Button';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
@@ -31,7 +31,7 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="John Doe"
-                  className="block placeholder:text-[#54565B] mt-2.5 w-full rounded-[10px] bg-[#060E22] border-b border-white px-6 py-4"
+                  className=" transition-colors duration-100 ease-in-out block placeholder:text-[#54565B] mt-2.5 w-full rounded-[10px] bg-[#060E2299] focus:bg-[#060E22] border-b border-[#54565B] focus:border-gray-800 px-6 py-4 focus:ring-0 focus:outline-none"
                 />
               </div>
               <div className="w-full mt-5 sm:mt-0">
@@ -41,7 +41,7 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="johndoe@gmail.com"
-                  className="block placeholder:text-[#54565B] mt-2.5 w-full rounded-[10px] bg-[#060E22] border-b border-white px-6 py-4"
+                  className="transition-colors duration-100 ease-in-out block placeholder:text-[#54565B] mt-2.5 w-full rounded-[10px] bg-[#060E2299] focus:bg-[#060E22] border-b border-[#54565B] focus:border-gray-800 px-6 py-4 focus:ring-0 focus:outline-none"
                 />
               </div>
             </div>
@@ -51,13 +51,13 @@ const Footer = () => {
               </label>
               <textarea
                 placeholder="help me...."
-                className="block placeholder:text-[#54565B] mt-2.5 w-full h-[211px] rounded-[10px] bg-[#060E22] border-b border-white px-6 py-4"
+                className="block placeholder:text-[#54565B] mt-2.5 w-full h-[211px] rounded-[10px] bg-[#060E2299] focus:bg-[#060E22] border-b border-[#54565B] focus:border-gray-800 px-6 py-4 focus:ring-0 focus:outline-none"
               />
             </div>
             <div className="">
               <div className="rounded-[10px] border border-[#8F7676] border-dashed border-spacing-3 flex justify-center items-center">
                 <p className="py-10 text-center">
-                  Drop useful files here or{" "}
+                  Drop useful files here or{' '}
                   <span className="font-bold">upload</span> them from your
                   computer
                   <br /> We accept files up to 15 MB
@@ -81,13 +81,13 @@ const Footer = () => {
               </h3>
               <div className="mt-3 lg:mt-0">
                 <Image
-                  src={"/img/clutch_banner.png"}
+                  src={'/img/clutch_banner.png'}
                   alt="Clutch"
                   width={400}
                   height={120}
                 />
                 <Image
-                  src={"/img/trustpilot.png"}
+                  src={'/img/trustpilot.png'}
                   alt="Clutch"
                   width={400}
                   height={131}
@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
             <div className="text-secondary">
               <h3 className="uppercase font-bold text-2xl md:text-3xl lg:text-[35px] lg:leading-[90px]">{`We're here:`}</h3>
-              <p className="text-[#828080] text-xl lg:text-[25px]">
+              <p className="text-[#828080] text-xl lg:text-[22px] leading-7 2xl:text-[25px]">
                 32b Velyka Vasylkivska str., Kyiv, Ukraine
                 <br />
                 <span className="">working hours:</span>
