@@ -39,8 +39,8 @@ const Services = () => {
           development projects of any scope and complexity, including:
         </p>
       </motion.div>
-      <div className="w-full bg-dark mt-10 sm:mt-16 md:mt-20 lg:mt-32 px-[5%] xl:px-[10%] py-12 xl:py-[71px] grid grid-cols-2 gap-y-4 gap-x-4 min-[480px]:gap-0">
-        <div className="min-[480px]:pt-8 lg:pt-[50px] pb-10 lg:pb-[110px] min-[480px]:pr-8 lg:pr-[72px] border-white min-[480px]:border-r min-[480px]:border-b">
+      <div className="w-full bg-dark mt-10 sm:mt-16 md:mt-20 lg:mt-32 px-[5%] xl:px-[10%] py-12 xl:py-[71px] sm:grid grid-cols-2 gap-y-4 gap-x-4 sm:gap-0">
+        <div className="sm:pt-8 lg:pt-[50px] pb-10 lg:pb-[110px] sm:pr-8 lg:pr-[72px] border-white sm:border-r sm:border-b">
           <motion.div
             initial={{ opacity: 0, x: -150 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -70,7 +70,7 @@ const Services = () => {
             </motion.p>
           </div>
         </div>
-        <div className="min-[480px]:pt-8 lg:pt-[42px] pb-10 lg:pb-[110px] min-[480px]:pl-8 lg:pl-[72px] min-[480px]:border-b border-white">
+        <div className="sm:pt-8 lg:pt-[42px] pb-10 lg:pb-[110px] sm:pl-8 lg:pl-[72px] sm:border-b border-white">
           <motion.div
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -100,7 +100,7 @@ const Services = () => {
             </motion.p>
           </div>
         </div>
-        <div className="min-[480px]:pt-10 lg:pt-[126px] pb-12 lg:pb-[110px] min-[480px]:pr-8 lg:pr-[72px] min-[480px]:border-t border-white">
+        <div className="sm:pt-10 lg:pt-[126px] pb-12 lg:pb-[110px] sm:pr-8 lg:pr-[72px] sm:border-t border-white">
           <motion.div
             initial={{ opacity: 0, x: -150 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -130,7 +130,7 @@ const Services = () => {
             </motion.p>
           </div>
         </div>
-        <div className="min-[480px]:pt-10 lg:pt-[99px] pb-12 lg:pb-[110px] min-[480px]:pl-8 lg:pl-[72px] border-white min-[480px]:border-t min-[480px]:border-l">
+        <div className="sm:pt-10 lg:pt-[99px] pb-12 lg:pb-[110px] sm:pl-8 lg:pl-[72px] border-white sm:border-t sm:border-l">
           <motion.div
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}

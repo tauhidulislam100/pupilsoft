@@ -23,7 +23,7 @@ const Footer = () => {
               rests. In Material Design, the baseline is an important
               specification in measuring
             </p>
-            <div className="pt-10 lg:pt-20 flex justify-evenly gap-5 lg:gap-10 font-jost">
+            <div className="pt-10 lg:pt-20 sm:flex justify-evenly gap-5 lg:gap-10 font-jost">
               <div className="w-full">
                 <label htmlFor="name" className="font-bold text-base">
                   Your Name
@@ -34,7 +34,7 @@ const Footer = () => {
                   className="block placeholder:text-[#54565B] mt-2.5 w-full rounded-[10px] bg-[#060E22] border-b border-white px-6 py-4"
                 />
               </div>
-              <div className="w-full">
+              <div className="w-full mt-5 sm:mt-0">
                 <label htmlFor="name" className="font-bold text-base">
                   Your Email
                 </label>
@@ -83,13 +83,13 @@ const Footer = () => {
                 <Image
                   src={"/img/clutch_banner.png"}
                   alt="Clutch"
-                  width={450}
+                  width={400}
                   height={120}
                 />
                 <Image
                   src={"/img/trustpilot.png"}
                   alt="Clutch"
-                  width={450}
+                  width={400}
                   height={131}
                   className="mt-3.5"
                 />
