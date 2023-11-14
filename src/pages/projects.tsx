@@ -11,6 +11,7 @@ import {
 } from 'components';
 import { useState } from 'react';
 import Head from 'next/head';
+import { TypeAnimation } from 'react-type-animation';
 
 const ProjectsPage: NextPage = () => {
   const [isClicked, setClicked] = useState(false);
@@ -27,7 +28,20 @@ const ProjectsPage: NextPage = () => {
             onClick={() => setClicked((prev) => !prev)}
             className={`${isClicked ? 'text-[#0AF4E1]' : 'text-primary'}`}
           >
-            Mobile applications
+            <TypeAnimation
+              sequence={[
+                'APP Development.',
+                1000,
+                'Web Development.',
+                1000,
+                'Blockchain Development.',
+                1000,
+                '',
+              ]}
+              speed={30}
+              // deletionSpeed={10}
+              repeat={Infinity}
+            />
           </span>
         </h1>
       </Hero>

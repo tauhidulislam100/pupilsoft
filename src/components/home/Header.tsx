@@ -9,6 +9,7 @@ import { useDimensions } from 'hooks';
 import { useCycle, motion } from 'framer-motion';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import Button from 'components/common/Button';
+import { useRouter } from 'next/router';
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -29,9 +30,29 @@ const sidebar = {
     },
   },
 };
-const Header: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
 
+const menuLinks = [
+  {
+    linkText: 'What we Do',
+    linkUrl: '/what-we-do',
+  },
+  {
+    linkText: 'Projects',
+    linkUrl: '/projects',
+  },
+  {
+    linkText: 'Teams',
+    linkUrl: '/teams',
+  },
+  {
+    linkText: 'Blogs',
+    linkUrl: '/blogs',
+  },
+];
+
+const Header = ({ isTransparent = false }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter();
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -47,10 +68,11 @@ const Header: React.FC = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  const isActive = (pathname: string) => router.pathname === pathname;
   return (
     <div
       className={`fixed select-none px-5 xs:px-8 md:px-10 top-0 left-0 w-full flex items-center justify-between py-4 z-[55000] transition-all duration-300 ${
-        isScrolled && 'bg-[#0B1327]'
+        isScrolled && !isTransparent && 'bg-[#0B1327]'
       }`}
     >
       <div className="flex items-center cursor-pointer text-primary">
@@ -62,24 +84,21 @@ const Header: React.FC = () => {
         </Link>
       </div>
       <div className="space-x-20 hidden lg:block">
-        <Link
-          href={'/what-we-do'}
-          className="text-white font-commissioner font-medium"
-        >
-          What we Do
-        </Link>
-        <Link
-          href={'/projects'}
-          className="text-white font-commissioner font-medium"
-        >
-          Projects
-        </Link>
-        <Link
-          href={'/teams'}
-          className="text-white font-commissioner font-medium"
-        >
-          Teams
-        </Link>
+        {menuLinks.map((menu) => (
+          <Link
+            key={menu.linkUrl}
+            href={menu.linkUrl}
+            className="relative text-white font-commissioner font-medium"
+          >
+            {menu.linkText}
+            {isActive(menu.linkUrl) && (
+              <motion.div
+                layoutId="active_underline"
+                className="absolute w-full -bottom-7 left-0 h-1 min-h-1 bg-primary"
+              />
+            )}
+          </Link>
+        ))}
       </div>
       <div className="">
         <Button className="py-[9.25px] text-[15px]">Get in Touch</Button>

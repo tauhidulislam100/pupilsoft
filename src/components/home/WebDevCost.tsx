@@ -84,7 +84,7 @@ const WebDevCost = () => {
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="text-2xl sm:text-3xl lg:text-4xl xl:text-[45px] xl:leading-[54px] font-bold text-black font-poppins"
+              className="text-center sm:text-left text-xl min-[480px]:text-2xl sm:text-3xl lg:text-4xl xl:text-[45px] xl:leading-[54px] font-bold text-black font-poppins"
             >
               Want to know the budget of your project?
             </motion.h3>
@@ -92,7 +92,7 @@ const WebDevCost = () => {
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="pt-3 sm:pt-5 md:pt-8 lg:pt-10 text-base sm:text-lg lg:text-xl xl:text-[22px] text-black font-commissioner pb-[30px]"
+              className="text-center sm:text-left pt-3 sm:pt-5 md:pt-8 lg:pt-10 text-base sm:text-lg lg:text-xl xl:text-[22px] text-black font-commissioner pb-[30px]"
             >
               Reach out to estimate the cost of your future digital solution
             </motion.p>
@@ -100,7 +100,7 @@ const WebDevCost = () => {
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="w-fit"
+              className="w-fit mx-auto sm:mx-0"
             >
               <Button className="max-w-[292px] py-2.5 text-lg">
                 Get a Quote
@@ -135,7 +135,7 @@ const WebDevCost = () => {
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="text-2xl sm:text-3xl lg:text-4xl xl:text-[45px] xl:leading-[54px] font-bold text-black font-poppins mb-10"
+            className="text-center sm:text-left text-xl min-[480px]:text-2xl sm:text-3xl lg:text-4xl xl:text-[45px] xl:leading-[54px] font-bold text-black font-poppins mb-10"
           >
             you can arrange a schedule for meting with our team.
           </motion.h3>
@@ -143,7 +143,7 @@ const WebDevCost = () => {
             initial={{ opacity: 0, x: 200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="w-fit"
+            className="w-fit mx-auto sm:mx-0"
           >
             <Button className="max-w-[257px] py-2.5 text-lg">
               Let&apos;s Talk

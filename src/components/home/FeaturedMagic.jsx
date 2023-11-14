@@ -75,7 +75,7 @@ const FeaturedMagic = () => {
               <li
                 className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 0
-                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
+                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold text-white'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
@@ -86,7 +86,7 @@ const FeaturedMagic = () => {
               <li
                 className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 1
-                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
+                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold text-white'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
@@ -97,7 +97,7 @@ const FeaturedMagic = () => {
               <li
                 className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 2
-                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
+                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold text-white'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
@@ -108,7 +108,7 @@ const FeaturedMagic = () => {
               <li
                 className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 3
-                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
+                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold text-white'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
@@ -119,7 +119,7 @@ const FeaturedMagic = () => {
               <li
                 className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 4
-                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
+                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold text-white'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
@@ -130,7 +130,7 @@ const FeaturedMagic = () => {
               <li
                 className={`transition-all cursor-pointer duration-500 ease-in-out ${
                   active === 5
-                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold'
+                    ? 'text-2xl sm:text-5xl lg:text-7xl font-bold text-white'
                     : 'text-xl sm:text-4xl opacity-60'
                 }`}
               >
@@ -167,7 +167,7 @@ const FeaturedMagic = () => {
             active === 2 ? 'opacity-50' : 'opacity-20'
           }`}
           style={{ backgroundImage: `url(${featuredmagic2})` }}
-        ></div>
+        />
         <div
           id="sec4"
           ref={slidesRef4}
@@ -175,7 +175,7 @@ const FeaturedMagic = () => {
             active === 3 ? 'opacity-50' : 'opacity-20'
           }`}
           style={{ backgroundImage: `url(${featuredmagic3})` }}
-        ></div>
+        />
         <div
           id="sec5"
           ref={slidesRef4}
@@ -183,7 +183,7 @@ const FeaturedMagic = () => {
             active === 4 ? 'opacity-50' : 'opacity-20'
           }`}
           style={{ backgroundImage: `url(${featuredmagic4})` }}
-        ></div>
+        />
         <div
           id="sec6"
           ref={slidesRef4}
@@ -191,7 +191,7 @@ const FeaturedMagic = () => {
             active === 5 ? 'opacity-50' : 'opacity-20'
           }`}
           style={{ backgroundImage: `url(${featuredmagic5})` }}
-        ></div>
+        />
       </div>
     </section>
   );
