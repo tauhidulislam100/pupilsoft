@@ -100,7 +100,7 @@ const TextScrambleComponent = () => {
   // Render text
   return (
     <h1
-      className="max-w-full w-full overflow-hidden text-4xl text-center sm:text-5xl md:text-6xl font-bold"
+      className="max-w-full w-full overflow-hidden text-4xl text-[#C9C9C9] text-center sm:text-5xl md:text-6xl font-bold"
       ref={textRef}
     ></h1>
   );

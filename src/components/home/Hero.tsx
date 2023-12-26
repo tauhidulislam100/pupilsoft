@@ -1,21 +1,22 @@
-import React, { useEffect, useRef } from "react";
-import Header from "./Header";
-import { RiInstagramLine, RiTwitterFill, RiWallet2Line } from "react-icons/ri";
-import { FaTelegramPlane } from "react-icons/fa";
-import Slider from "react-slick";
+import React, { useEffect, useRef } from 'react';
+import Header from './Header';
+import { RiInstagramLine, RiTwitterFill, RiWallet2Line } from 'react-icons/ri';
+import { FaTelegramPlane } from 'react-icons/fa';
+import Slider from 'react-slick';
 
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
-import TextScrambleComponent from "./ScrambleText";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import TextScrambleComponent from './ScrambleText';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const settings = {
-  className: "hero",
+  className: 'hero',
   fade: true,
   infinite: true,
   speed: 500,
@@ -24,8 +25,8 @@ const settings = {
   autoplaySpeed: 3000,
   slidesToScroll: 1,
   arrows: false,
-  cssEase: "ease-in-out",
-  lazyLoad: "ondemand",
+  cssEase: 'ease-in-out',
+  lazyLoad: 'ondemand',
 };
 
 const Hero = ({ children }: { children?: React.ReactNode }) => {
@@ -34,12 +35,12 @@ const Hero = ({ children }: { children?: React.ReactNode }) => {
   const scrollTo = (id) => gsap.to(window, { duration: 1, scrollTo: id });
 
   useEffect(() => {
-    const tl = gsap.timeline({ y: 100, duration: 1, ease: "ease-in-out" });
+    const tl = gsap.timeline({ y: 100, duration: 1, ease: 'ease-in-out' });
     titlesRef.current.map((v) => {
       gsap.from(v, {
         y: 100,
         duration: 1,
-        ease: "ease-in-out",
+        ease: 'ease-in-out',
         delay: 0.3,
       });
     });
@@ -49,7 +50,7 @@ const Hero = ({ children }: { children?: React.ReactNode }) => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="relative w-full min-h-screen max-h-screen overflow-hidden bg-dark"
+      className="relative w-full min-h-screen max-h-screen overflow-hidden bg-[#100D0D]"
     >
       {/* <div className="w-full h-full max-h-screen">
         <Slider
@@ -72,6 +73,9 @@ const Hero = ({ children }: { children?: React.ReactNode }) => {
           </div>
         </Slider>
       </div> */}
+      <div className="absolute top-0 w-[241px] h-full left-0">
+        <Image src={'/img/hero-bg.svg'} fill alt="vector" />
+      </div>
       <div className="absolute w-full h-full top-0 left-0 md:px-10 -z-0">
         <div className="relative w-[90%] mx-auto">
           <div className="relative pt-40">
@@ -113,7 +117,7 @@ const Hero = ({ children }: { children?: React.ReactNode }) => {
                         Development.
                       </h1> */}
                       <TextScrambleComponent />
-                      <p className=" text-center text-lg md:text-[22px] font-extralight md:leading-[35px] font-commissioner mt-7">
+                      <p className=" text-center text-[#C9C9C9] text-lg md:text-[22px] font-extralight md:leading-[35px] font-commissioner mt-7">
                         We work with both startups and mature businesses to
                         create high-end products for effective performance and
                         growth. We love sophisticated technologies and complex
