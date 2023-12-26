@@ -101,7 +101,9 @@ const Header = ({ isTransparent = false }) => {
         ))}
       </div>
       <div className="">
-        <Button className="py-[9.25px] text-[15px]">Get in Touch</Button>
+        <Button className="py-3 text-sm lg:text-[15px] bg-dark hover:bg-black hover:text-white border-0 border-b border-[#605F5F] shadow-lg uppercase sm:!tracking-[1px] md:!tracking-[2px] lg:tracking-[5px] !font-medium lg:font-bold">
+          Get in Touch
+        </Button>
       </div>
     </div>
   );

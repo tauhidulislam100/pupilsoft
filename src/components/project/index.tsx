@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 
 const Project = () => {
   return (
@@ -17,7 +18,7 @@ const Project = () => {
             src={'/featured3.png'}
             alt="Project"
             fill
-            className="rounded-xlg"
+            className="rounded-xlg grayscale"
           />
         </motion.div>
         <div className="lg:w-[40%] xl:w-1/3 text-dark text-lg mt-5">
@@ -77,15 +78,9 @@ const Project = () => {
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
-              className="w-fit"
+              className="w-fit border px-5 2xl:px-7 border-black mt-7"
             >
-              <Image
-                src={'/img/arrow_right.svg'}
-                alt="Arrow"
-                width={152}
-                height={30}
-                className=" mt-8 xl:mt-16"
-              />
+              <IoIosArrowRoundForward className="text-4xl lg:text-6xl xl:text-7xl 2xl:text-[80px]" />
             </motion.div>
           </Link>
         </div>
